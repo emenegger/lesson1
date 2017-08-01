@@ -1,0 +1,403 @@
+* {
+/* This prevents strange padding issues */
+	box-sizing: border-box;
+}
+
+/* Color Variables */
+:green1 {
+	--green1: #A4F4D3;
+}
+
+@font-face {
+	font-family: "Barbatrick";
+	src: url("Fonts/barbatrick.otf");
+}
+
+@font-face {
+	font-family: "Still Time";
+	src: url("Fonts/still_time.otf");
+}
+
+body {
+	margin-top: 36px;
+}
+
+section {
+	border-color: #F7CBF5;
+	border: 2px #F7CBF5;
+}
+
+
+nav li {
+	display: inline-block;
+	/*text-transform: uppercase; */
+	text-decoration: none;
+	font-family: 'Barbatrick', cursive;
+	padding: 15px 7%;
+	color: #F7CBF5;
+	font-size: 16px;
+}
+
+nav li:hover {
+	text-decoration: none;
+	color: #C70039;
+	font-weight: bold;
+	transition: all 1s;
+	font-size: 20px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+/*
+nav a:hover {
+	text-decoration: none;
+	color: #C70039;
+	font-weight: bold;
+	transition: all 1s;
+	font-size: 20px;
+}
+*/
+
+nav a:focus {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#image {
+	font-family: 'Patrick Hand SC', cursive;
+	padding: 10px 5%;
+	color: #F3FFE2;
+	text-decoration: none;
+	text-align: left;
+	background-color: @color2;
+	border-radius: 5px;
+	size: 30px;
+}
+
+nav {
+	text-align: right;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #EB7F00;
+	z-index: 1;
+	border-bottom: 2px;
+	border-bottom-color: #A4F4D3;
+	border-style: solid;
+
+}
+
+#box {
+	border: 2px solid black;
+	width: 400px;
+	height: 400px;
+}
+
+#home-image {
+	display: none;
+}
+
+h1 {
+	font-size: 64px;
+	font-family: 'Barbatrick', sans-serif;
+	text-align: center;
+	padding-top: 10px;
+}
+
+h2 {
+	font-size: 46px;
+	font-family: 'Still Time', sans-serif;
+	text-align: center;
+	padding-top: 5px;
+}
+
+h3 {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+}
+
+.resume-section-3-button li {
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	font-size: 20px;
+}
+
+#home h1 {
+	padding-top: 0px;
+}
+
+#home h2 {
+	color: #75B6F6;
+	margin-top: 5px;
+}
+
+#about-header {
+	position: relative;
+	top: 40px;
+}
+
+#about h2 {
+	color: #F7CBF5;
+}
+
+p {
+	font-family: 'Istok Web', sans-serif;
+}
+
+section {
+	min-height: 100vh;
+	color: #F3FFE2;
+	padding-top: 56px;
+	/*margin-top: -56px; */
+	border-color: #F7CBF5;
+	border: 7px;
+	border-style: solid;
+}
+
+#home {
+	background-color: black;
+	color: #A4F4D3;
+	transition: background-color 2s;
+}
+
+#about {
+	background-color: black;
+	color: #F7CBF5;
+}
+
+#resume {
+	background-color: black;
+	color: #75B6F6;
+}
+
+#projects {
+	background-color: black;
+	color: #75EAF6;
+	background: url(https://s-media-cache-ak0.pinimg.com/originals/00/f3/95/00f39584284caf5dda29f1443fe4e085.jpg) repeat center left;
+}
+
+#gallery {
+	background-color: black;
+}
+
+#menu-icon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	border: none;
+	background: transparent;
+	font-size: 30px;
+}
+
+#about-image {
+	max-width:90%;
+ 	max-height:90%;
+	border: 3px;
+ 	border-style: solid;
+ 	border-color: #F7CBF5;
+}
+
+/*#about-image:hover {
+	transform: scale(1.2,1.2);
+}*/
+
+/* #palmtree {
+	transition: background-image 2s;
+	background-image: url(http://img03.deviantart.net/7724/i/2016/344/a/b/retrowave_background_by_hayny-dar38p1.png);
+	opacity: 0;
+	transition: opacity 3s ease-in;
+}
+
+#palmtree:hover {
+	opacity: 1;
+}
+*/ 
+
+.resume-section-1, .resume-section-1-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #75EAF6;
+	color: black; 
+	padding: 5px;
+}
+
+.resume-section-1-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #75EAF6;
+	color: black;
+	display: none; 
+}
+
+
+.resume-section-2, .resume-section-2-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #A4F4D3;
+	color: black; 
+	padding: 5px;
+}
+
+.resume-section-2-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #A4F4D3;
+	color: black;
+	display: none; 
+}
+
+.resume-section-3, .resume-section-3-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #F7CBF5;
+	color: black; 
+	padding: 5px;
+}
+
+.resume-section-3-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #F7CBF5;
+	color: black;
+	display: none;
+}
+
+.resume-section-4-button {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #75EAF6;
+	color: black;
+	display: none; 
+	padding: 5px;
+}
+
+.resume-section-4 {
+	width: 100%;
+	height: 100px;
+	left: 0;
+	background-color: #75EAF6;
+	color: black; 
+	padding: 5px;
+}
+
+.bruce-lee {
+	width: 400px;
+	height: 400px;
+	left: calc(100%-400px);
+	top: 150px;
+	position: relative;
+	display: block;
+	overflow: auto;
+	float: right;
+}
+
+.bruce-lee.kick {
+	animation: kick 1s;
+}
+
+@keyframes kick {
+	0% {top: 150; left: calc(100%-400px);}
+	100% {top: 150; left: 200px;}	
+}
+
+
+div > .img-responsive {
+	border: 1px solid;
+	margin-bottom: 10px;
+}
+
+.slideShow {
+	position: relative;
+	padding: 10px 0px;
+}
+
+.mySlides {
+	display: none;
+	border: 3px;
+ 	border-style: solid;
+ 	border-color: #A4F4D3;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #75EAF6;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Still Time', sans-serif;
+}
+
+/* type '-' then 'transition' then tab to autopopulate the following */
+-webkit-transition: all 2s;
+-o-transition: all 2s;
+transition: all 2s;
+
+.row {
+	border: 1px solid;
+	margin: 0px;
+	padding: 0px;
+}
+
+img > .img-responsive {
+	border: 1px solid;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 993px) {
+	nav {
+		display: none;
+		width: 30%;
+		float: left;
+		top: 0;
+		right: 0;
+	}
+	#menu-icon {
+		display: block;
+	}
+	nav li {
+		display: block;
+	}
+	body {
+	/*	margin-top: 144px; */
+	}
+	section {
+	/*	margin-top: -144px; */
+		padding-top: 56px;
+	}
+}
+
+@media (min-width: 668px) {
+	#home {
+		background-color: black;
+	}
+}
+
+@media (min-width: 768px) {
+	#home {
+		background-color: black;
+	}
+}
+
+@media (min-width: 1024px) {
+	#home {
+		background-color: black;
+	}
+}

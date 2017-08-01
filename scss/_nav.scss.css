@@ -1,0 +1,37 @@
+nav li {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Istok Web', sans-serif;
+	padding: 15px 7%;
+	color: #EB7F00;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #C70039;
+	font-weight: bold;
+	transition: all 1s;
+}
+
+nav a:focus {
+	text-decoration: none;
+}
+
+nav {
+	text-align: right;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: #F3FFE2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #EB7F00;
+	z-index: 1;
+
+}
