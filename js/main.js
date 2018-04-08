@@ -57,5 +57,5 @@ $(".resume-section-4").click(function(){
 // });
 
 $(document).ready(function() {
-	$(".home-image").slideLeft(1000)
+	$(".home-image").slideDown(1000);
 });
